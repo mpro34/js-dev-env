@@ -5,6 +5,7 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
   - npm install
+  - npm install mocha
 
 test_script:
   - node --version
